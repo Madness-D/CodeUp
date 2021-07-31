@@ -24,7 +24,7 @@ int main(){
     int n;
     while(cin>>n && n){
         if(fee(n)==(int)fee(n))
-            cout<<fee(n)<<endl;
+            printf("%f\n",fee(n));
         else    
             printf("%.1f\n",fee(n));
     }
