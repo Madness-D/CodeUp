@@ -37,11 +37,11 @@ void insert(node* &root, typename x){
         root = newNode(x);
         return ;
     }
-    if(判断条件，插入左子树){
+    //if(判断条件，插入左子树){
         insert(root->lchild,x);
-    }else{
+    //}else{
         insert(root->rchild,x);
-    }
+    //}
 }
 
 //根据数组创建二叉树
