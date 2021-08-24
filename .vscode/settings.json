@@ -6,6 +6,7 @@
         "xutility": "cpp",
         "utility": "cpp",
         "xtree": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "stack": "cpp"
     }
 }
