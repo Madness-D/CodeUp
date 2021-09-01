@@ -31,7 +31,7 @@ void Union(int a, int b) {
 
 int main() {
     int N, M;
-    while (cin >> N >> M && N && M) {
+    while (cin >> N >> M && N && M) {//test
 
         father.resize(N + 1);
         init(N);
