@@ -23,11 +23,7 @@ void downAdjust(int low, int high) {
         }
     }
 }
-void creatHeap() {
-    for (int i = n / 2; i >= 1; i--) {
-        downAdjust(i, n);
-    }
-}
+
 void deleteTop() {
     heap[1] = heap[n--];
     downAdjust(1, n);
@@ -49,12 +45,28 @@ void insert(int x) {
     heap[++n] = x;
     upAdjust(1, n);
 }
-
-int main() {
-    int a[11] = { 2,4,6,1,23,7,8,3,5,0,9 };
-    for (int i = 0; i < 11; i++) {
+//感觉这个不太对
+void createHeap(int a[],int n) {
+    for (int i = 0; i <n; i++) {
         insert(a[i]);
     }
+}
+
+
+void heapSort(){
+    for(int i=n;i>1;i--){
+        swap(heap[i],heap[1]);
+        downAdjust(1,i-1);
+    }
+}
+int main() {
+    int a[11] = { 2,4,6,1,23,7,8,3,5,0,9 };
+    createHeap(a,n);
+    // for (int i = 0; i < 11; i++) {
+    //     insert(a[i]);
+    // }
+
+    heapSort();
 
 
     return 0;
