@@ -6,7 +6,7 @@
 
 
 //参数：当前先序序列的区间[preL,preR],  中序序列区间[inL,inR]
-node* creat(int preL,int preR,int inL,intR){
+node* creat(int preL,int preR,int inL,inR){
     if(preL>=preR){
         return nullptr;
     }
